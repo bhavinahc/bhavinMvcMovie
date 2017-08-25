@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Welcome to my Movies App";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<ul>
+    @for (int i = 0; i < ViewBag.NumTimes; i++)
+    {
+        <li>@ViewBag.Message</li>
+    }
+</ul>
